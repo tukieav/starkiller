@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://53r44ebredcv"]
+
+[ext_resource type="PackedScene" uid="uid://b8veygss52sto" path="res://Scenes/Bullet.tscn" id="1_ae75y"]
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_xfu05"]
+[ext_resource type="PackedScene" uid="uid://d1i3j6mfbm3tx" path="res://Scenes/Enemy.tscn" id="2_567qs"]
+[ext_resource type="PackedScene" uid="uid://vutc87lmanwg" path="res://Scenes/Player.tscn" id="3_u6sh4"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xfu05")
+
+[node name="Enemy" parent="." instance=ExtResource("2_567qs")]
+position = Vector2(732, -75)
+
+[node name="Player" parent="." instance=ExtResource("3_u6sh4")]
+position = Vector2(702, 2479)
+
+[node name="Bullet" parent="." instance=ExtResource("1_ae75y")]

@@ -1,0 +1,16 @@
+# Godot specific ignores
+.import/
+.godot/
+.mono/
+.vs/
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+
+# MacOS specific ignores
+.DS_Store
+
+# Windows specific ignores
+Thumbs.db

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://vutc87lmanwg"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_nkw4f"]
+[ext_resource type="Texture2D" uid="uid://6q100wqffert" path="res://Assets/player_starship.png" id="2_yal60"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_neufc"]
+size = Vector2(124, 136)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_nkw4f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -1)
+texture = ExtResource("2_yal60")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_neufc")
